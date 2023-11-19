@@ -36,15 +36,15 @@ section {
     section {
         flex-direction: row;
         justify-content: space-between;
-    
 
-    .main-content {
-        align-items: flex-start;
-        max-width: 50%;
 
-        h1 {
-            font-size: 56px;
+        .main-content {
+            align-items: flex-start;
+            max-width: 50%;
+
+            h1 {
+                font-size: 56px;
+            }
         }
     }
-}
 }
