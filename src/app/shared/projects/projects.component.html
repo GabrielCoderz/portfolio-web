@@ -1,0 +1,19 @@
+<section id="projects">
+    <h2>Projetos</h2>
+
+    <div class="container">
+        <ng-container *ngFor="let project of projects$ | async;">
+            <div class="box">
+                <span>{{ project.name }}</span>
+                <div class="box-techs">
+                    <div class="techs" *ngFor="let tech of project.techs; let i = index" [ngClass]="{'box-space': i > 0}">
+                       {{ tech }}
+                    </div>
+                </div>
+                <p class="description">{{ project.description }}</p>
+
+                <btn-primary class="btn-primary" text="Ver projeto" (click)="goToRepo(project.repo_url)"></btn-primary>
+            </div>
+        </ng-container>
+    </div>
+</section>

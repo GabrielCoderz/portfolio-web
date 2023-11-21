@@ -1,0 +1,20 @@
+#about {
+    margin-top: 80px;
+
+    .description {
+        position: relative;
+
+        span {
+            position: absolute;
+            left: 0;
+            height: 100%;
+            width: 5px;
+            background-color: #5222D0;    
+        
+        }
+
+        p {
+            margin-left: 20px;
+        }
+    }
+}
