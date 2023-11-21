@@ -3,7 +3,7 @@
 
     <div class="container">
         <ng-container *ngFor="let project of projects$ | async;">
-            <div class="box">
+            <div class="box" data-aos="flip-left">
                 <span>{{ project.name }}</span>
                 <i class='bx bxl-github'></i>
                 <div class="box-techs">
