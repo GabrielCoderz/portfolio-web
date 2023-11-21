@@ -3,10 +3,14 @@
     scroll-behavior: smooth;
 }
 
+body {
+    background-color: #151241;
+}
+
 a {
     list-style: none;
     text-decoration: none;
-    color: #151717;
+    color: #fffdfd;
 }
 
 p {
@@ -14,5 +18,7 @@ p {
 }
 
 h2 {
-    font-weight: 500;    
+    // font-size: 22px;
+    font-weight: 600;
+    color: #fffdfd;
 }

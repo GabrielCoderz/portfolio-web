@@ -15,14 +15,20 @@ section {
 
         span {
             text-transform: uppercase;
-            font-weight: 600;
-            font-size: 16px;
-            color: #151717;
+            // font-weight: 600;
+            font-size: 30px;
+            color: transparent;
+            -webkit-text-stroke: .5px #fff;
+            background-image: linear-gradient(#fff, #fff);
+            background-repeat: no-repeat;
+            -webkit-background-clip: text;
+            background-position: -320px 0;
+            animation: animateText 6s linear infinite;
         }
     
         h1 {
             background: rgb(2,0,36);
-            background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+            background: linear-gradient(90deg, rgb(137, 137, 245) 0%, rgb(12, 12, 197)35%, rgba(0,212,255,1) 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             display: inline-block;
@@ -30,6 +36,25 @@ section {
             margin: 0;
         }
 
+        .icons {
+            display: flex;
+            flex-direction: row;
+
+            i {
+                color: #fff;
+                font-size: 20px;
+                margin-right: 5px;
+                cursor: pointer;
+
+                &:hover {
+                    color: aqua;
+                }
+            }
+        }
+
+        p {
+            color: #fff;
+        }
         
     }
 }
@@ -48,5 +73,14 @@ section {
                 font-size: 56px;
             }
         }
+    }
+}
+
+@keyframes animateText {
+    0%, 95%, 100% {
+        background-position: -320px 0;
+    }
+    65%, 85% {
+        background-position: 0 0;
     }
 }
